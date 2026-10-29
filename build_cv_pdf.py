@@ -69,7 +69,7 @@ def role(title, dates, company, place, bullets):
 story = [
     P("Arsalene Zbidi", "Name"),
     P("AI ENGINEER  ·  PhD RESEARCHER", "Headline"),
-    P("Tunis, Tunisia  |  +216 90 431 500  |  zarsalene@gmail.com  |  github.com/zarsalene", "Contact"),
+    P("Tunis, Tunisia  |  +216 90 431 500  |  <link href='mailto:zarsalene@gmail.com' color='#68736b'>zarsalene@gmail.com</link>  |  <link href='https://github.com/zarsalene' color='#68736b'>github.com/zarsalene</link>", "Contact"),
     P("PROFILE", "SectionCV"),
     P("AI Engineer and PhD researcher building agentic systems, applied machine learning, and production-oriented backend software. Experience spans ERP-integrated assistants, document-grounded retrieval, computer vision, and AI solution architecture. Research focus: agentic AI for cybersecurity threat hunting."),
     P("EXPERIENCE", "SectionCV"),

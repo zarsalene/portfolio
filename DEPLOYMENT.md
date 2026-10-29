@@ -14,7 +14,7 @@ After creating or confirming a dedicated, appropriate portfolio repository:
 
 ```powershell
 git remote add origin https://github.com/zarsalene/portfolio.git
-git add index.html styles.css script.js assets PROJECT_AUDIT.md README.md DEPLOYMENT.md Arsalene_Zbidi_CV.tex build_cv_pdf.py
+git add index.html styles.css script.js assets PROJECT_AUDIT.md README.md DEPLOYMENT.md Arsalene_Zbidi_CV.tex Arsalene_Zbidi_CV.pdf build_cv_pdf.py
 git commit -m "Build AI engineering portfolio"
 git push -u origin main
 ```

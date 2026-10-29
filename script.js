@@ -22,7 +22,7 @@ const portfolio = {
       ],
       tech: "PYTHON · ONNX RUNTIME · OPENCV · FASTAPI · REACT · SQLITE",
       diagram: ["VIDEO / RTSP", "↓", "YOLO ONNX", "↓", "BYTETRACK + HYSTERESIS", "↓", "EVENTS · API · DASHBOARD"],
-      link: "https://github.com/zarsalene/counting_customers", linkLabel: "Repository"
+      link: null, linkLabel: "Local source; GitHub remote returns 404"
     },
     {
       number: "03", category: "RAG · RESEARCH SOFTWARE", name: "Research Pal",
@@ -34,7 +34,7 @@ const portfolio = {
       ],
       tech: "PYTHON · PDF EXTRACTION · RETRIEVAL · LLM WORKFLOWS",
       diagram: ["PAPER PDF", "↓", "TEXT + PASSAGES", "↓", "AI DRAFT + QUOTE CHECK", "↓", "REVIEWABLE READING CARD"],
-      link: "https://github.com/zarsalene/rsearch_pal", linkLabel: "Source repository", demo: "https://rsearch-pal-7tor.vercel.app/"
+      link: "https://github.com/zarsalene/rsearch_pal", linkLabel: "Source repository"
     },
     {
       number: "04", category: "APPLIED AI · ERP BACKEND", name: "Order dispatching & sourcing",

@@ -11,6 +11,7 @@ Open `index.html` in a browser. For a local HTTP preview, run `python -m http.se
 - `index.html`, `styles.css`, `script.js` — portfolio source.
 - `assets/Arsalene_Zbidi_CV.pdf` — downloadable refreshed CV.
 - `Arsalene_Zbidi_CV.tex` — editable LaTeX source.
+- `build_cv_pdf.py` — local PDF layout generator (ReportLab fallback for systems without LaTeX).
 - `PROJECT_AUDIT.md` — project evidence, scoring, and selection rationale.
 - `DEPLOYMENT.md` — current deployment status and next steps.
 
