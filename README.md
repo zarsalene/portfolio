@@ -22,3 +22,5 @@ Project content and experience are maintained in the `portfolio` object in `scri
 This site is published from [`zarsalene/portfolio`](https://github.com/zarsalene/portfolio) using `.github/workflows/pages.yml`. New pushes to `main` that change site files run the workflow. The live site is <https://zarsalene.github.io/portfolio/>.
 
 The workflow publishes an allowlist of the site files and refreshed CV asset. The original supplied CV remains in source history but is excluded from the Pages artifact. All local links are relative and work under a project subpath. Google Fonts are optional; system-font fallbacks are included.
+
+Root-level source and generated CV PDFs are ignored by Git. The refreshed `assets/Arsalene_Zbidi_CV.pdf` is the intentional tracked exception used by the download links.
