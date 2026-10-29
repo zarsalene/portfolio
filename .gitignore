@@ -1,3 +1,7 @@
 # Keep source/reference and generated CV PDFs local. The portfolio download in
 # assets/ is intentionally tracked so GitHub Pages can serve it.
 /Arsalene_Zbidi_CV*.pdf
+
+# Keep the original profile photo local; the optimized WebP is the public site asset.
+/assets/1758876786998.jpeg
+/tmp/
