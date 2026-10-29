@@ -20,8 +20,8 @@ Project content and experience are maintained in the `portfolio` object in `scri
 ## GitHub Pages
 
 1. Create or select a repository for this site. Do not use an existing unrelated repository.
-2. From this folder, initialize Git only if it is not already a repository; add and commit the site files.
-3. Push to the selected repository and enable **Settings → Pages → Deploy from a branch**, selecting `main` and `/ (root)`, or add a Pages workflow.
-4. For a project repository, verify the published URL follows `https://USERNAME.github.io/REPOSITORY/` and test the CV download there.
+2. Push the `main` branch with `.github/workflows/pages.yml` included.
+3. In **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source.
+4. Check the Actions run, then verify the published URL and the CV download there.
 
-All local asset and CV links are relative, so they resolve under a project subpath. Google Fonts are optional; the page has system-font fallbacks.
+The workflow publishes an allowlist of the site files and refreshed CV asset. The original supplied CV remains in the source repository but is excluded from the Pages artifact. All local asset and CV links are relative, so they resolve under a project subpath. Google Fonts are optional; the page has system-font fallbacks.

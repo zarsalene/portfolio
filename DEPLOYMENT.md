@@ -4,7 +4,7 @@
 
 - Verified GitHub username from existing repository remotes: `zarsalene`.
 - Git is installed. GitHub CLI (`gh`) is unavailable. Git Credential Manager reports a saved GitHub account, but no supported CLI is available here to create/configure a repository or read Pages deployment status safely.
-- The current `Portfolio` folder is already a Git repository on branch `main`, has no remote, and contains the user's original CV PDF as an untracked file. That PDF was preserved. No remote was added and no push was attempted.
+- The current `Portfolio` folder is a Git repository on branch `main`, has no remote, and contains the supplied original CV PDF unchanged. It remains in source history; the Pages workflow publishes only an allowlist and excludes that original file from the website artifact. No remote was added and no push was attempted.
 - `https://github.com/zarsalene/rsearch_pal` is the verified public source for Research Pal; it is not the portfolio target.
 - No `zarsalene/portfolio` repository was confirmed from the local check. No live portfolio URL is claimed.
 
@@ -14,12 +14,12 @@ After creating or confirming a dedicated, appropriate portfolio repository:
 
 ```powershell
 git remote add origin https://github.com/zarsalene/portfolio.git
-git add index.html styles.css script.js assets PROJECT_AUDIT.md README.md DEPLOYMENT.md Arsalene_Zbidi_CV.tex Arsalene_Zbidi_CV.pdf build_cv_pdf.py
+git add .
 git commit -m "Build AI engineering portfolio"
 git push -u origin main
 ```
 
-Then enable GitHub Pages for `main` / root in repository settings, wait for the Pages workflow, and verify the deployed page and `assets/Arsalene_Zbidi_CV.pdf`. If the repository is named `portfolio`, its expected project URL is `https://zarsalene.github.io/portfolio/`; it is not live until GitHub confirms it.
+Then select **Settings → Pages → Build and deployment → GitHub Actions**, wait for the Pages workflow, and verify the deployed page and `assets/Arsalene_Zbidi_CV.pdf`. If the repository is named `portfolio`, its expected project URL is `https://zarsalene.github.io/portfolio/`; it is not live until GitHub confirms it.
 
 ## Validation completed locally
 
