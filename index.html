@@ -1,91 +1,108 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090d12">
-  <meta name="description" content="Arsalene Zbidi is an AI engineer with 2+ years in AI/ML and 3+ years in engineering, building agentic systems and applied AI software.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Arsalene Zbidi — AI Engineer">
-  <meta property="og:description" content="Agentic AI, applied machine learning, and carefully engineered software.">
-  <meta property="og:image" content="assets/arsalene-profile.webp">
-  <title>Arsalene Zbidi — AI Engineer</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script type="importmap">
-    {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js"}}
-  </script>
-  <script src="script.js" defer></script>
-  <script type="module" src="three-scene.js"></script>
-</head>
-<body>
-  <div class="scroll-progress" aria-hidden="true"></div>
-  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
-  <div class="ambient ambient-one" aria-hidden="true"></div>
-  <div class="ambient ambient-two" aria-hidden="true"></div>
-  <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Arsalene Zbidi home"><span class="wordmark-mark">A</span><span class="wordmark-name">ARSALENE ZBIDI</span></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n="menuButton">Menu <span class="menu-lines" aria-hidden="true">☰</span></button>
-    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-      <a href="#work" data-i18n="navWork">Work<span>01</span></a><a href="#about" data-i18n="navApproach">Approach<span>02</span></a><a href="#experience" data-i18n="navExperience">Experience<span>03</span></a>
-      <div class="lang-switch" role="group" aria-label="Language">
-        <button type="button" data-lang="en" aria-pressed="false">EN</button><button type="button" data-lang="fr" aria-pressed="false">FR</button><button type="button" data-lang="ar" aria-pressed="false">ع</button>
-      </div>
-      <a class="nav-cv" href="assets/Arsalene_Zbidi_CV.pdf" download data-i18n="navCv">Get my CV <span aria-hidden="true">↗</span></a>
-    </nav>
-  </header>
-  <main id="main">
-    <section class="hero section-wrap" id="top" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow hero-kicker" data-i18n="heroKicker"><span class="status-dot"></span> AI ENGINEER <span class="kicker-divider">/</span> TUNIS, TUNISIA</p>
-        <h1 id="hero-title" data-i18n="heroTitle">AI systems.<br><span class="hero-title-accent">Engineered.</span></h1>
-        <p class="hero-lede" data-i18n="heroLede">I turn ambitious AI ideas into software people can actually use.</p>
-        <p class="hero-description" data-i18n="heroDescription">Agentic systems, retrieval, computer vision, and backend architecture built around real workflows.</p>
-        <div class="hero-facts" aria-label="Experience highlights">
-          <div class="fact"><b>2+</b><span class="fact-label" data-i18n="factAi">YEARS IN AI/ML</span></div>
-          <div class="fact"><b>3+</b><span class="fact-label" data-i18n="factEng">YEARS IN ENGINEERING</span></div>
-          <div class="fact"><b>40+</b><span class="fact-label" data-i18n="factTools">DOCUMENTED ERP TOOLS</span></div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090d12">
+    <meta name="description" content="Arsalene Zbidi is an AI engineer building agentic systems, applied ML, and engineered software.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Arsalene Zbidi — AI Engineer">
+    <meta property="og:description" content="Agentic AI, applied machine learning, and carefully engineered software.">
+    <meta property="og:image" content="assets/arsalene-profile.webp">
+    <title>Arsalene Zbidi — AI Engineer</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script type="importmap">
+      {"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js"}}
+    </script>
+    <script src="script.js" defer></script>
+    <script type="module" src="three-scene.js"></script>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Arsalene Zbidi",
+      "jobTitle": "AI Engineer",
+      "image": "assets/arsalene-profile.webp",
+      "alternateName": "zarsalene",
+      "url": "https://zarsalene.github.io/portfolio/",
+      "sameAs": [
+        "https://github.com/zarsalene",
+        "https://www.linkedin.com/in/arsalenezbidi/"
+      ],
+      "description": "AI engineer with 2+ years in AI/ML and 3+ years in engineering, building agentic systems and applied AI software."
+    }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Arsalene Zbidi home"><span class="wordmark-mark">A</span><span class="wordmark-name">ARSALENE ZBIDI</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu <span class="menu-lines" aria-hidden="true">☰</span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#work">Work<span>01</span></a><a href="#about">Approach<span>02</span></a><a href="#experience">Experience<span>03</span></a>
+        <a class="nav-cv" href="assets/Arsalene_Zbidi_CV.pdf" download>Get my CV <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section-wrap" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow hero-kicker"><span class="status-dot"></span> AI ENGINEER <span class="kicker-divider">/</span> TUNIS, TUNISIA</p>
+          <h1 id="hero-title">AI systems.<br><span class="hero-title-accent">Engineered.</span></h1>
+          <p class="hero-lede">AI engineer with 2+ years in AI/ML and 3+ years across engineering.</p>
+          <p class="hero-description">Agentic systems, retrieval, computer vision, and backend architecture.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#work">See the work <span aria-hidden="true">↓</span></a><a class="button button-quiet" href="assets/Arsalene_Zbidi_CV.pdf" download>Download CV <span aria-hidden="true">↗</span></a></div>
+          <div class="social-row" aria-label="Professional profiles">
+            <a href="https://github.com/zarsalene" target="_blank" rel="noreferrer" class="social-icon github"><span class="icon-github" aria-hidden="true"></span><span class="sr-only">GitHub</span></a>
+            <a href="https://www.linkedin.com/in/arsalenezbidi/" target="_blank" rel="noreferrer" class="social-icon linkedin"><span class="icon-linkedin" aria-hidden="true"></span><span class="sr-only">LinkedIn</span></a>
+            <a href="mailto:zarsalene@gmail.com" target="_blank" rel="noreferrer" class="social-icon email"><span class="icon-email" aria-hidden="true"></span><span class="sr-only">Email</span></a>
+          </div>
         </div>
-        <div class="hero-actions"><a class="button button-primary" href="#work" data-i18n="seeWork">See the work <span aria-hidden="true">↓</span></a><a class="button button-quiet" href="assets/Arsalene_Zbidi_CV.pdf" download data-i18n="downloadCv">Download CV <span aria-hidden="true">↗</span></a></div>
-        <div class="social-row" aria-label="Professional profiles"><a href="https://github.com/zarsalene" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/arsalenezbidi/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a href="mailto:zarsalene@gmail.com">Email <span aria-hidden="true">↗</span></a></div>
-      </div>
-      <div class="hero-visual" aria-label="Portrait of Arsalene Zbidi with an animated 3D network motif">
-        <div class="visual-index" aria-hidden="true"><span>AZ</span><span data-i18n="visualIndex">AI / SYSTEMS</span></div>
-        <canvas id="hero-scene" aria-hidden="true"></canvas>
-        <div class="visual-halo" aria-hidden="true"></div>
-        <figure class="portrait-frame"><img src="assets/arsalene-profile.webp" alt="Portrait of Arsalene Zbidi" fetchpriority="high" width="460" height="460"><figcaption data-i18n="heroFigTemplate">BUILDING WHAT'S NEXT <span>↗</span></figcaption></figure>
-        <div class="visual-tag"><span class="tag-pulse"></span> <span data-i18n="visualTag">HUMAN THINKING<br><b>+ MACHINE SCALE</b></span></div>
-        <span class="orbit-label orbit-label-top" aria-hidden="true" data-i18n="orbit1">01 — AGENTIC AI</span>
-        <span class="orbit-label orbit-label-bottom" aria-hidden="true" data-i18n="orbit2">02 — APPLIED ML</span>
-      </div>
-      <div class="hero-bottom"><span data-i18n="heroBottomL">SELECTED ENGINEERING WORK</span><span data-i18n="heroBottomR">SCROLL TO EXPLORE <b aria-hidden="true">↓</b></span></div>
-    </section>
+        <div class="hero-visual" aria-label="Portrait of Arsalene Zbidi with an animated 3D network motif">
+          <div class="visual-index" aria-hidden="true"><span>AZ</span><span>AI / SYSTEMS</span></div>
+          <canvas id="hero-scene" aria-hidden="true"></canvas>
+          <div class="visual-halo" aria-hidden="true"></div>
+          <figure class="portrait-frame"><img src="assets/arsalene-profile.webp" alt="Portrait of Arsalene Zbidi" fetchpriority="high" width="460" height="460"><figcaption>BUILDING WHAT'S NEXT <span>↗</span></figcaption></figure>
+          <div class="visual-tag"><span class="tag-pulse"></span> HUMAN THINKING<br><b>+ MACHINE SCALE</b></div>
+          <span class="orbit-label orbit-label-top" aria-hidden="true">01 — AGENTIC AI</span>
+          <span class="orbit-label orbit-label-bottom" aria-hidden="true">02 — APPLIED ML</span>
+        </div>
+        <div class="hero-bottom"><span>SELECTED ENGINEERING WORK</span><span>SCROLL TO EXPLORE <b aria-hidden="true">↓</b></span></div>
+      </section>
 
-    <section class="work section-wrap" id="work" aria-labelledby="work-title">
-      <div class="section-heading work-heading"><div><p class="eyebrow section-kicker" data-i18n="workKicker">01 / SELECTED WORK</p><h2 id="work-title" data-i18n="workTitle">Different problems.<br><span>Carefully engineered.</span></h2></div><p class="section-intro" data-i18n="workIntro">From permission-aware ERP agents to edge computer vision, each project solves a concrete workflow challenge.</p></div>
-      <div class="project-list" id="project-list" aria-live="polite"></div>
-    </section>
+      <section class="work section-wrap" id="work" aria-labelledby="work-title">
+        <div class="section-heading work-heading"><div><p class="eyebrow section-kicker">01 / SELECTED WORK</p><h2 id="work-title">Different problems.<br><span>Carefully engineered.</span></h2></div><p class="section-intro">From permission-aware ERP agents to edge computer vision, each project solves a concrete workflow challenge.</p></div>
+        <div class="project-list" id="project-list" aria-live="polite"></div>
+      </section>
 
-    <section class="about section-wrap" id="about" aria-labelledby="about-title">
-      <div class="section-heading about-heading"><div><p class="eyebrow section-kicker" data-i18n="aboutKicker">02 / HOW I WORK</p><h2 id="about-title" data-i18n="aboutTitle">Useful AI is<br><span>good engineering.</span></h2></div><div class="about-copy"><p class="about-lede" data-i18n="aboutLede">I connect models, data, and product workflows.</p><p data-i18n="aboutText">I design around clear system boundaries, verifiable outputs, and permission-aware tool use.</p></div></div>
-      <div class="skills-grid" id="skills-grid"></div>
-      <div class="research-strip"><span class="eyebrow" data-i18n="researchLabel">CURRENT RESEARCH</span><p data-i18n="researchText">PhD in Computer Science at SUP'COM <span>·</span> Agentic AI for threat hunting</p><span class="research-mark" aria-hidden="true">↗</span></div>
-    </section>
+      <section class="about section-wrap" id="about" aria-labelledby="about-title">
+        <div class="section-heading about-heading"><div><p class="eyebrow section-kicker">02 / HOW I WORK</p><h2 id="about-title">Useful AI is<br><span>good engineering.</span></h2></div><div class="about-copy"><p class="about-lede">I connect models, data, and product workflows.</p><p>I design around clear system boundaries, verifiable outputs, and permission-aware tool use.</p></div></div>
+        <div class="skills-grid" id="skills-grid"></div>
+        <div class="research-strip"><span class="eyebrow">CURRENT RESEARCH</span><p>PhD in Computer Science at SUP'COM <span>·</span> Agentic AI for threat hunting</p><span class="research-mark" aria-hidden="true">↗</span></div>
+      </section>
 
-    <section class="experience section-wrap" id="experience" aria-labelledby="experience-title">
-      <div class="section-heading experience-heading"><div><p class="eyebrow section-kicker" data-i18n="expKicker">03 / EXPERIENCE</p><h2 id="experience-title" data-i18n="expTitle">Built with<br><span>ambitious teams.</span></h2></div><p class="section-intro" data-i18n="expIntro">Two-plus years in AI/ML and three-plus in engineering — leading AI teams, architecture, and delivery.</p></div>
-      <div id="experience-list" class="experience-list"></div>
-    </section>
+      <section class="experience section-wrap" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading experience-heading"><div><p class="eyebrow section-kicker">03 / EXPERIENCE</p><h2 id="experience-title">Built with<br><span>ambitious teams.</span></h2></div><p class="section-intro">AI architecture and team leadership, with earlier work in applied ML and DevOps.</p></div>
+        <div id="experience-list" class="experience-list"></div>
+      </section>
 
-    <section class="contact section-wrap" id="contact" aria-labelledby="contact-title">
-      <div class="contact-content"><p class="eyebrow section-kicker" data-i18n="contactKicker">04 / LET'S TALK</p><h2 id="contact-title" data-i18n="contactTitle">Have a hard<br>problem? <span>Good.</span></h2><p data-i18n="contactText">Let’s talk about agentic AI, applied machine learning, or the systems behind them.</p></div>
-      <div class="contact-actions"><a class="button button-primary" href="mailto:zarsalene@gmail.com" data-i18n="contactPrimary">Start a conversation <span aria-hidden="true">↗</span></a><a class="contact-link" href="assets/Arsalene_Zbidi_CV.pdf" download data-i18n="contactCv">Download my CV <span>↓</span></a><p data-i18n="contactAddress">Tunis, Tunisia<br>+216 90 431 500</p></div>
-      <div class="contact-orbit" aria-hidden="true">AZ<span>·</span>AI<span>·</span>BUILD<span>·</span></div>
-    </section>
-  </main>
-  <footer class="site-footer section-wrap"><a class="wordmark" href="#top"><span class="wordmark-mark">A</span><span class="wordmark-name">ARSALENE ZBIDI</span></a><span>© <span id="year"></span> · <span data-i18n="madeIn">MADE IN TUNIS</span></span><div><a href="https://github.com/zarsalene" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/arsalenezbidi/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:zarsalene@gmail.com">Email ↗</a><a href="#top">Top ↑</a></div></footer>
-</body>
+      <section class="contact section-wrap" id="contact" aria-labelledby="contact-title">
+        <div class="contact-content"><p class="eyebrow section-kicker">04 / LET'S TALK</p><h2 id="contact-title">Have a hard<br>problem? <span>Good.</span></h2><p>Let's talk about agentic AI, applied machine learning, or the systems behind them.</p></div>
+        <div class="contact-actions"><a class="button button-primary" href="mailto:zarsalene@gmail.com">Start a conversation <span aria-hidden="true">↗</span></a><a class="contact-link" href="assets/Arsalene_Zbidi_CV.pdf" download>Download my CV <span>↓</span></a><p>Tunis, Tunisia<br>+216 90 431 500</p></div>
+        <div class="contact-orbit" aria-hidden="true">AZ<span>·</span>AI<span>·</span>BUILD<span>·</span></div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-wrap"><a class="wordmark" href="#top"><span class="wordmark-mark">A</span><span class="wordmark-name">ARSALENE ZBIDI</span></a><span>© <span id="year"></span> · MADE IN TUNIS</span><div><a href="https://github.com/zarsalene" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/arsalenezbidi/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:zarsalene@gmail.com">Email ↗</a><a href="#top">Top ↑</a></div></footer>
+  </body>
 </html>
