@@ -1,0 +1,86 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1.55cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\usepackage{parskip}
+\definecolor{ink}{HTML}{1D2922}
+\definecolor{green}{HTML}{51712E}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.2em,itemsep=1.5pt,topsep=3pt,parsep=0pt}
+\titleformat{\section}{\large\bfseries\color{ink}}{}{0pt}{}[\vspace{-3pt}\color{green}\titlerule]
+\titlespacing*{\section}{0pt}{11pt}{5pt}
+\newcommand{\role}[4]{\textbf{#1}\hfill{\small #2}\\{\small\color{green}#3}\hfill{\small\color{gray}#4}\par}
+\begin{document}
+{\Huge\bfseries\color{ink} Arsalene Zbidi}\hfill{\large\color{green} AI ENGINEER}\\[4pt]
+Tunis, Tunisia \quad|\quad +216 90 431 500 \quad|\quad \href{mailto:zarsalene@gmail.com}{zarsalene@gmail.com} \quad|\quad \href{https://github.com/zarsalene}{github.com/zarsalene}
+
+\section{Profile}
+AI Engineer and PhD researcher building agentic systems, applied machine learning, and production-oriented backend software. Experience spans ERP-integrated assistants, document-grounded retrieval, computer vision, and AI solution architecture. Research focus: agentic AI for cybersecurity threat hunting.
+
+\section{Experience}
+\role{Head of AI}{Mar 2026 -- Present}{Microzed Solution}{Megrine, Tunisia}
+\begin{itemize}
+  \item Lead a team of two AI engineers building agents integrated with the Zsolution ERP platform.
+  \item Guide development of an ERP assistant for cross-module analytics, conversational queries, and system workflows.
+\end{itemize}
+\role{AI Engineer \& Solution Architect}{Oct 2024 -- Mar 2026}{Artificial Insight}{Tunis, Tunisia}
+\begin{itemize}
+  \item Led technical strategy for a five-person engineering team working on the PowerSale AI platform.
+  \item Developed Telco GPT conversational AI with LangGraph multi-agent orchestration.
+  \item Built a multi-tenant retrieval system for Kuwait Fire Force training material, combining Qdrant semantic retrieval, Elasticsearch keyword search, Arabic OCR, and graph memory.
+  \item Developed a multilingual meeting pipeline for speech transcription, summaries, and text-to-speech reports.
+\end{itemize}
+\role{Machine Learning Engineer Intern}{Feb 2024 -- Sep 2024}{Artificial Insight}{Tunis, Tunisia}
+\begin{itemize}
+  \item Built vehicle recognition and license-plate OCR workflows with YOLOv8, OpenCV, EasyOCR, and TensorFlow.
+  \item Integrated SORT tracking with MongoDB alerting for vehicle identification.
+\end{itemize}
+\role{DevOps Engineer Intern}{Jan 2021 -- Jun 2021}{Polina Group Holding}{Tunis, Tunisia}
+\begin{itemize}
+  \item Worked on CI/CD and monitoring using GitLab CI, Jenkins, ArgoCD, Kubernetes, Grafana, Prometheus, and SonarQube.
+\end{itemize}
+
+\section{Selected Projects}
+\textbf{MICRO -- ERP analytics assistant} \hfill {\small LangGraph, MCP, FastAPI, MySQL}
+\begin{itemize}
+  \item Agent architecture connects a LangGraph assistant to ERP operations through a separate FastMCP server; employee and AI permissions are checked before tool execution.
+\end{itemize}
+\textbf{FootTraffic AI} \hfill {\small Python, ONNX Runtime, OpenCV, FastAPI}
+\begin{itemize}
+  \item Built a doorway counting pipeline using YOLO ONNX detection, ByteTrack, and a hysteresis band, with a multi-camera API and event reporting. A documented 13-crossing calibration sample reached 13/13 at the selected band width.
+\end{itemize}
+\textbf{Research Pal} \hfill {\small Python, PDF retrieval, LLMs}
+\begin{itemize}
+  \item Developed PDF-grounded reading, search, and chat workflows that verify generated quotations against extracted document text and flag unsupported claims.
+\end{itemize}
+\textbf{ERP order dispatching and sourcing} \hfill {\small FastAPI, Gemini, MySQL}
+\begin{itemize}
+  \item Built ERP APIs for stock-aware order dispatching, warehouse sourcing, and product descriptions; stock calculations are prepared server-side before AI recommendations.
+\end{itemize}
+
+\section{Education}
+\textbf{PhD in Computer Science -- Cybersecurity \& AI} \hfill 2024 -- Present\\
+Higher School of Communications of Tunis (SUP'COM) \quad|\quad Research: Threat hunting using agentic AI
+
+\textbf{Engineering Degree in Computer Science -- Data Science \& AI} \hfill 2021 -- 2024\\
+Central Polytechnic School of Tunis
+
+\textbf{Bachelor in Computer Science} \hfill 2018 -- 2021\\
+Higher Institute of Information and Communication Technologies
+
+\section{Technical Skills}
+\textbf{AI / ML:} LangGraph, LangChain, RAG, multi-agent systems, MCP, NLP, YOLOv8, TensorFlow, PyTorch, OpenCV\\
+\textbf{Backend / data:} Python, Java, FastAPI, PostgreSQL, MySQL, MongoDB, Elasticsearch, Redis, Qdrant, FalkorDB\\
+\textbf{Infrastructure:} Docker, Kubernetes, GitLab CI, Jenkins, ArgoCD, Prometheus, Grafana, SonarQube\\
+\textbf{Languages:} Arabic (native), English (fluent), French (fluent)
+
+\section{Leadership}
+Captain, Tunisia National Volleyball Team (2014--2018); captain, Hammam-lif Senior Volleyball Team (2016--present).
+\end{document}
