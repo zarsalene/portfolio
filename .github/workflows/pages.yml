@@ -3,6 +3,12 @@ name: Deploy portfolio to GitHub Pages
 on:
   push:
     branches: [main]
+    paths:
+      - '.github/workflows/pages.yml'
+      - 'index.html'
+      - 'styles.css'
+      - 'script.js'
+      - 'assets/**'
   workflow_dispatch:
 
 permissions:

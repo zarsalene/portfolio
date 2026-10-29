@@ -1,29 +1,21 @@
 # Deployment status
 
-**Status: prepared locally; not deployed.**
+**Status: deployed and verified on 29 October 2026.**
 
-- Verified GitHub username from existing repository remotes: `zarsalene`.
-- Git is installed. GitHub CLI (`gh`) is unavailable. Git Credential Manager reports a saved GitHub account, but no supported CLI is available here to create/configure a repository or read Pages deployment status safely.
-- The current `Portfolio` folder is a Git repository on branch `main`, has no remote, and contains the supplied original CV PDF unchanged. It remains in source history; the Pages workflow publishes only an allowlist and excludes that original file from the website artifact. No remote was added and no push was attempted.
-- `https://github.com/zarsalene/rsearch_pal` is the verified public source for Research Pal; it is not the portfolio target.
-- No `zarsalene/portfolio` repository was confirmed from the local check. No live portfolio URL is claimed.
+- Repository: [github.com/zarsalene/portfolio](https://github.com/zarsalene/portfolio), branch `main`.
+- Live website: [zarsalene.github.io/portfolio](https://zarsalene.github.io/portfolio/).
+- GitHub Pages uses GitHub Actions. Workflow run [40871523050](https://github.com/zarsalene/portfolio/actions/runs/40871523050), attempt 2, completed successfully.
+- The original supplied CV PDF remains unchanged in repository history. The workflow publishes only the site HTML, CSS, JavaScript, favicon, and refreshed CV PDF; it excludes the original PDF, LaTeX source, audit, and project files.
+- GitHub CLI (`gh`) is not installed. Git Credential Manager authenticated as `zarsalene`; Git and the GitHub Pages API completed the push and Pages setup.
+- `https://github.com/zarsalene/rsearch_pal` is the verified public source for Research Pal. The footfall remote returned 404, and the documented Research Pal demo could not be retrieved, so neither is presented as a working link.
 
-## Remaining deployment steps
+## Deployment configuration
 
-After creating or confirming a dedicated, appropriate portfolio repository:
+Future pushes to `main` that change the Pages workflow or public site files trigger `.github/workflows/pages.yml`. The workflow publishes an explicit allowlist to GitHub Pages.
 
-```powershell
-git remote add origin https://github.com/zarsalene/portfolio.git
-git add .
-git commit -m "Build AI engineering portfolio"
-git push -u origin main
-```
+## Validation
 
-Then select **Settings → Pages → Build and deployment → GitHub Actions**, wait for the Pages workflow, and verify the deployed page and `assets/Arsalene_Zbidi_CV.pdf`. If the repository is named `portfolio`, its expected project URL is `https://zarsalene.github.io/portfolio/`; it is not live until GitHub confirms it.
-
-## Validation completed locally
-
-- Static HTML structure, local paths, link targets, metadata, and responsive/reduced-motion rules were checked.
-- JavaScript syntax was checked with Node.
-- CV PDF was generated locally from the same curated content as the editable `.tex`; its selectable text and page count were checked.
-- No browser automation or remote Pages build was available in this environment. LaTeX compilers were not installed, so the PDF was rendered with ReportLab; the `.tex` remains editable but has not been compiled here.
+- Static HTML references, metadata, responsive rules, and reduced-motion support were checked. JavaScript syntax passed Node.
+- The CV PDF was visually reviewed, rendered as two pages, and checked for selectable text and working email/GitHub links.
+- GitHub Pages returned HTTP 200 for the page, stylesheet, JavaScript, favicon, and CV PDF. The served CV was checked for two pages and selectable text.
+- Browser automation was not available, so no interactive browser console or viewport screenshot check was performed. LaTeX compilers were not installed; the PDF was rendered with ReportLab. The `.tex` is editable but was not compiled here.
