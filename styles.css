@@ -1,4 +1,4 @@
-/*! moderncss-reset v6.1.0 | MIT License */
+/*! moderncss-reset v6.1.1 | MIT License */
 :root{--bg:#090d12;--bg-warm:#0d1218;--panel:#111820;--panel-soft:#151f28;--line:rgba(204,231,233,.14);--line-subtle:rgba(204,231,233,.08);--white:#f3f6f1;--muted:#a8b4bb;--subtle:#71818b;--accent:#64e8e7;--accent-warm:#d9f56d;--error:#ff8469;--soft:#71818b;--font-sans:'DM Sans',Arial,sans-serif;--font-display:'Space Grotesk',DM Sans,sans-serif;--font-mono:'DM Mono',monospace;}
 
 *{box-sizing:border-box;margin:0;padding:0}
