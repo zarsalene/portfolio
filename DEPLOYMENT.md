@@ -1,11 +1,11 @@
 # Deployment status
 
-**Status: deployed and verified on 29 October 2026.**
+**Status: deployed and verified on 29 October 2026. Trilingual site and demo videos landed locally after this verification; push to redeploy.**
 
 - Repository: [github.com/zarsalene/portfolio](https://github.com/zarsalene/portfolio), branch `main`.
 - Live website: [zarsalene.github.io/portfolio](https://zarsalene.github.io/portfolio/).
 - GitHub Pages uses GitHub Actions. Latest workflow run [40872210936](https://github.com/zarsalene/portfolio/actions/runs/40872210936) completed successfully.
-- The original supplied CV PDF remains unchanged in repository history. The workflow publishes only the site HTML, CSS, JavaScript, favicon, and refreshed CV PDF; it excludes the original PDF, LaTeX source, audit, and project files.
+- The original supplied CV PDF remains unchanged in repository history. The workflow publishes the site HTML, CSS, JavaScript, favicon, the refreshed CV PDF, and the compressed demo videos in `assets/`; it excludes the original PDF, LaTeX source, audit, and project files.
 - Root-level source and generated CV PDFs are now ignored and untracked; their local copies remain. The refreshed `assets/Arsalene_Zbidi_CV.pdf` stays tracked for the portfolio download. The old source PDF is still present in Git history.
 - GitHub CLI (`gh`) is not installed. Git Credential Manager authenticated as `zarsalene`; Git and the GitHub Pages API completed the push and Pages setup.
 - `https://github.com/zarsalene/rsearch_pal` is the verified public source for Research Pal. The footfall remote returned 404, and the documented Research Pal demo could not be retrieved, so neither is presented as a working link.

@@ -34,7 +34,7 @@ jobs:
         run: |
           mkdir -p _site/assets
           cp index.html styles.css script.js three-scene.js _site/
-          cp assets/* _site/assets/
+          cp -r assets/. _site/assets/
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:

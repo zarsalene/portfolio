@@ -10,12 +10,17 @@ Open `index.html` in a browser. For a local HTTP preview, run `python -m http.se
 
 - `index.html`, `styles.css`, `script.js` - portfolio source.
 - `assets/Arsalene_Zbidi_CV.pdf` - downloadable refreshed CV.
+- `assets/*.mp4` - compressed demo videos embedded on the site: `zorbit-demo-60s.mp4` (Z-orbit live demo), `microai-vertical-30s.mp4` (MicroAI vertical walkthrough), plus the `microai-insights.mp4` and `microai-erp-help.mp4` interface clips (`*-poster.jpg` are their poster frames). All use `preload="none"`, so they only download when a visitor presses play.
 - `Arsalene_Zbidi_CV.tex` - editable LaTeX source.
 - `build_cv_pdf.py` - local ReportLab PDF generator for systems without LaTeX.
 - `PROJECT_AUDIT.md` - project evidence, scoring, and selection rationale.
 - `DEPLOYMENT.md` - verified deployment details.
 
-Project content and experience are maintained in the `portfolio` object in `script.js`. Keep the CV, project audit, and website aligned when facts change. The site links only to verified personal and project URLs; internal projects are labeled as such.
+## Languages
+
+The site is trilingual: English (default), French, and Arabic (RTL). All copy lives in the `content` packs in `script.js`; the header switcher (EN / FR / ع) re-renders the page in place and remembers the choice in `localStorage`. The Arabic stack uses **IBM Plex Sans Arabic**, and `<html>` language and direction attributes are updated on switch. Project data, experience, and skills have per-language variants; the CV download links to the English PDF in every language.
+
+Project content and experience are maintained in the `content` object in `script.js`. Keep the CV, project audit, and website aligned when facts change. The site links only to verified personal and project URLs; internal projects are labeled as such.
 
 ## GitHub Pages
 
