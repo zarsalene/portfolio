@@ -4,7 +4,7 @@
 
 - Repository: [github.com/zarsalene/portfolio](https://github.com/zarsalene/portfolio), branch `main`.
 - Live website: [zarsalene.github.io/portfolio](https://zarsalene.github.io/portfolio/).
-- GitHub Pages uses GitHub Actions. Workflow run [40871523050](https://github.com/zarsalene/portfolio/actions/runs/40871523050), attempt 2, completed successfully.
+- GitHub Pages uses GitHub Actions. Latest workflow run [40872210936](https://github.com/zarsalene/portfolio/actions/runs/40872210936) completed successfully.
 - The original supplied CV PDF remains unchanged in repository history. The workflow publishes only the site HTML, CSS, JavaScript, favicon, and refreshed CV PDF; it excludes the original PDF, LaTeX source, audit, and project files.
 - Root-level source and generated CV PDFs are now ignored and untracked; their local copies remain. The refreshed `assets/Arsalene_Zbidi_CV.pdf` stays tracked for the portfolio download. The old source PDF is still present in Git history.
 - GitHub CLI (`gh`) is not installed. Git Credential Manager authenticated as `zarsalene`; Git and the GitHub Pages API completed the push and Pages setup.
