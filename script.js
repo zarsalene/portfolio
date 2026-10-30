@@ -442,7 +442,7 @@ let storedLang = null;
 try { storedLang = localStorage.getItem("portfolio-lang"); } catch (error) {}
 const browserLangs = (navigator.languages || [navigator.language || "en"]).join(",").toLowerCase();
 const urlLang = new URLSearchParams(window.location.search).get("lang");
-const lang = langOrder.find((code) => code === urlLang) || langOrder.find((code) => code === storedLang) || langOrder.find((code) => browserLangs.includes(code)) || "en";
+let lang = langOrder.find((code) => code === urlLang) || langOrder.find((code) => code === storedLang) || langOrder.find((code) => browserLangs.includes(code)) || "en";
 let pack = content[lang];
 
 /* ---------- i18n ---------- */
